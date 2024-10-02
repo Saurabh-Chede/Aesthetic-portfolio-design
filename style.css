@@ -1,0 +1,147 @@
+*{
+  box-sizing: border-box;
+  font-family: monospace;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  /* max-width: 1120px; */
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  scroll-behavior: smooth;
+  transition: 0.4s ease-in-out;
+  color: white;
+  
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  margin: 0 auto; 
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* Semi-transparent background */
+  backdrop-filter: blur(1px); /* Optional: Adds a blur effect behind the nav */
+  padding: 10px 0; /* Add some padding for aesthetics */
+  z-index: 1000;
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+  
+}
+
+
+ul {
+  display: flex;
+  gap: 80px;
+  padding-inline: 40px;
+  
+
+}
+
+li ,a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  
+ 
+
+}
+
+a:hover{
+  color: rgb(255, 255, 255);
+  transition: .2s ease-in-out;
+  text-shadow: 
+        0 0 5px #ffffff, 
+        0 0 10px #ffffff, 
+        0 0 15px #f8f8f8, /* Adjust color for glow */
+        0 0 20px #ffffff, /* Adjust color for stronger glow */
+        0 0 25px #ffffff, 
+        0 0 30px #ffffff, 
+        0 0 35px #ffffff; 
+  
+}
+
+ #home{
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+ 
+  
+}
+
+img{
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 0.4em;
+  
+}
+
+
+
+#contact{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  scroll-behavior: auto;
+}
+
+#about{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(39, 39, 39);
+
+}
+
+
+#carrers{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+
+}
+
+header{
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  position: fixed;
+  padding-inline: 24px;
+  padding-block: 12px;
+  color: black;
+  background-color: bisque;
+  margin-top: 90vh;
+  margin-left: 90vw;
+  outline: none;
+  border: none;
+  z-index: 2000;
+}
+
+.button a{
+  color: black;
+
+}
+
+
+ 
