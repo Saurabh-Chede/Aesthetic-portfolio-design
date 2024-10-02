@@ -143,5 +143,26 @@ header{
 
 }
 
+@media (max-width:768px) {
+
+  ul {
+    display: flex;
+    gap: 20px;
+    padding-inline: 40px;
+    
+  
+  }
+
+  img{
+    width: 260px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 0.4em;
+    
+  }
+  
+  
+}
+
 
  
