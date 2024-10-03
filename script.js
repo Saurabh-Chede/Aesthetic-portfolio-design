@@ -33,3 +33,15 @@ document.addEventListener("DOMContentLoaded", () => {
       observer.observe(header);
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('backgroundSound');
+
+    // Attempt to autoplay the sound
+    audio.play().catch(function(error) {
+      // Autoplay prevented, listen for user interaction
+      document.body.addEventListener('click', function() {
+        audio.play();
+      }, { once: true }); // Only require one click to start the audio
+    });
+  });
