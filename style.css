@@ -15,8 +15,26 @@ body{
   scroll-behavior: smooth;
   transition: 0.4s ease-in-out;
   color: white;
+ 
   
 }
+
+/* ---------particle-js----------*/
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: max-content;
+  z-index: 2;
+}
+#content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+
 
 nav {
   display: flex;
@@ -85,7 +103,9 @@ img{
   object-fit: cover;
   border-radius: 0.4em;
   
+  
 }
+
 
 
 
